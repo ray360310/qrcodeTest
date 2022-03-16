@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">qrcodeTest</string>
+
+    <string name="fragment_enter_name_title_txw">請輸入姓名</string>
+    <string name="fragment_enter_name_title_edit_hint">姓名</string>
+    <string name="fragment_enter_confirm_btn">確認</string>
+
+    <string name="permission_need_permission">需要相關權限</string>
+    <string name="toast_permission_done">相機權限已開啟</string>
+    <string name="dialog_permission_redirect_to_setting">掃描功能需要權限才可使用，要導引至應用程式設定去開啟權限嗎？</string>
+    <string name="dialog_permission_redirect_to_setting_positive">好</string>
+    <string name="dialog_permission_redirect_to_setting_negative">稍後</string>
+
+    <string name="toast_fragment_enter_please_enter_name">請輸入姓名</string>
+
+    <string name="dialog_questions_question_title_txw">Q:</string>
+
+    <string name="fragment_result_result_txw">恭喜 %s 完成 %s題，答對 %s題。 \n 結果： %s</string>
+
+</resources>

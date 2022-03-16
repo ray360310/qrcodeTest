@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_main"
+    app:startDestination="@id/enterFragment">
+
+    <fragment
+        android:id="@+id/enterFragment"
+        android:name="com.larvata.qrcodetest.ui.EnterFragment"
+        android:label="fragment_enter"
+        tools:layout="@layout/fragment_enter" >
+        <action
+            android:id="@+id/action_enterFragment_to_qrcodeFragment"
+            app:destination="@id/qrcodeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/qrcodeFragment"
+        android:name="com.larvata.qrcodetest.ui.QrcodeFragment"
+        android:label="fragment_qrcode"
+        tools:layout="@layout/fragment_qrcode" >
+        <argument
+            android:name="userName"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_qrcodeFragment_to_resultFragment"
+            app:destination="@id/resultFragment"
+            app:popUpTo="@id/enterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.larvata.qrcodetest.ui.ResultFragment"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" >
+        <argument
+            android:name="userName"
+            app:argType="string" />
+        <argument
+            android:name="totalQuestions"
+            app:argType="integer" />
+        <argument
+            android:name="correctQuestions"
+            app:argType="integer" />
+        <argument
+            android:name="resultStr"
+            app:argType="string" />
+    </fragment>
+</navigation>
